@@ -51,7 +51,7 @@ public abstract class WebService
 			if (filename != null) {
 				try {
 					FileWriter writer = new FileWriter(filename + ".xml"); //filename + ".xml"), "UTF-8"
-					writer.write(xml.toString(2));
+					writer.write(xml.format(2));
 					writer.flush();
 					writer.close();
 				} catch (IOException e) {

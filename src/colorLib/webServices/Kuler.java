@@ -25,7 +25,7 @@ public class Kuler extends WebService
 
 
 	protected String key;
-	private String serverPage = "http://kuler-api.adobe.com/rss/";
+	private String serverPage = "https://kuler-api.adobe.com/rss/";
 	private String pageTyp = ".cfm";
 	
 	private boolean debugMode = true;

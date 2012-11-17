@@ -1,4 +1,4 @@
-<project name="ProcessingLibs" default="clean" basedir="../">
+<project name="Colorlib" default="clean" basedir="../">
 
     
 <!--	
@@ -65,7 +65,7 @@
 
 	<path id="classpath">
 		<fileset dir="${classpath.local.location}" includes="${classpath.local.include}" />
-		<fileset dir="${classpath.libraries.location}" includes="**/*.jar" />
+		<!--<fileset dir="${classpath.libraries.location}" includes="**/*.jar" />-->
 		<fileset dir="${project.lib}" includes="**/*.jar" />
 	</path>		
 
@@ -138,6 +138,7 @@ ${line}
 	
 	
 	<target name="compile">
+		<echo message="${classpath}"></echo>
 		<javac srcdir="${project.tmp}/${project.name}/src" destdir="${project.bin}" source="${java.target.version}" target="${java.target.version}" includeantruntime="false">
 			<classpath>
 				<path refid="classpath"/>
